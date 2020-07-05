@@ -69,19 +69,38 @@ ul {
   color: var(--accent-color);
 }
 
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
 /*hero*/
 
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   /*color: var(--title-dark-theme-color);*/
 }
 
 .button {
+  margin-bottom: 294px;
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -102,6 +121,15 @@ ul {
 }
 
 /*what we do*/
+
+.team,
+.section,
+.clients {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
 .section-team {
   font-weight: 700;
   font-size: 36px;
@@ -185,6 +213,7 @@ ul {
 }
 
 .button-list {
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
