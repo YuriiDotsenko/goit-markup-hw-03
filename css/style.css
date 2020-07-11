@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
@@ -21,7 +31,13 @@ ul {
 
 /*logo*/
 
+.logo {
+  margin-left: 215px;
+}
+
 .logo-decoration {
+  padding-top: 24px;
+  padding-bottom: 25px;
   text-decoration: none;
 }
 
@@ -36,10 +52,24 @@ ul {
 }
 
 .logo-studio {
+  margin-right: 85px;
   color: var(--title-light-theme-color);
 }
 
 /*navigation*/
+
+.navigation {
+  border: 1px solid red;
+  display: flex;
+}
+
+.link {
+  padding: 0;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+}
 
 .link-item {
   font-weight: 500;
@@ -50,9 +80,23 @@ ul {
   text-decoration: none;
 }
 
+.general:not(:last-child) {
+  margin-right: 50px;
+}
+
 .link-item:hover,
 .link-item:focus {
   color: var(--accent-color);
+}
+
+.info {
+  padding: 0;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid red;
+  display: flex;
+  margin-left: auto;
 }
 
 .info-kontakt {
@@ -64,26 +108,41 @@ ul {
   text-decoration: none;
 }
 
+.icon {
+  margin-right: 10px;
+}
+
+.info-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .info-kontakt:hover,
 .info-kontakt:focus {
   color: var(--accent-color);
 }
 
 .conteiner {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*hero*/
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  border: 1px solid chartreuse;
+  width: 1600px;
 }
 
 .hero-title {
+  padding: 0;
   margin-top: 0;
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -92,8 +151,18 @@ ul {
   /*color: var(--title-dark-theme-color);*/
 }
 
+h1,
+h2 {
+  margin: 0;
+}
+
+.hero-title {
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+
 .button {
-  margin-bottom: 294px;
+  margin-bottom: 200px;
   border-radius: 4px;
   min-width: 200px;
   text-align: center;
@@ -110,6 +179,34 @@ ul {
 }
 
 /*our advantages*/
+
+.primery {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-margin:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section {
+  border: 1px solid red;
+  padding-top: 119px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.text {
+  width: 270px;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 10px;
+}
 
 .title {
   font-weight: 700;
