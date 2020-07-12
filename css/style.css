@@ -261,6 +261,7 @@ p {
 .no-margin {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .no-margin:not(:last-child) {
@@ -446,9 +447,11 @@ p {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   flex-wrap: wrap;
   margin-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .decor {
