@@ -31,10 +31,6 @@ ul {
 
 /*logo*/
 
-.logo {
-  margin-left: 215px;
-}
-
 .logo-decoration {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -59,7 +55,6 @@ ul {
 /*navigation*/
 
 .navigation {
-  border: 1px solid red;
   display: flex;
 }
 
@@ -94,7 +89,6 @@ ul {
   margin: 0;
   padding-top: 32px;
   padding-bottom: 32px;
-  border: 1px solid red;
   display: flex;
   margin-left: auto;
 }
@@ -136,7 +130,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid chartreuse;
   width: 1600px;
 }
 
@@ -152,17 +145,23 @@ ul {
 }
 
 h1,
-h2 {
+h2,
+h3,
+p {
   margin: 0;
 }
 
 .hero-title {
   padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .button {
   margin-bottom: 200px;
+}
+
+.button,
+.button-footer {
   border-radius: 4px;
   min-width: 200px;
   text-align: center;
@@ -184,14 +183,14 @@ h2 {
   display: flex;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 .primary-margin:not(:last-child) {
   margin-right: 30px;
 }
 
-.section {
-  border: 1px solid red;
+.first-section {
   padding-top: 119px;
   padding-left: 15px;
   padding-right: 15px;
@@ -220,11 +219,12 @@ h2 {
 /*what we do*/
 
 .team,
-.section,
-.clients {
+.first-section,
+.clients,
+.two-section {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1230px;
 }
 
 .section-team {
@@ -234,6 +234,43 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-light-theme-color);
+}
+
+.employment {
+  display: flex;
+  margin: 0;
+  padding-bottom: 94px;
+  justify-content: center;
+}
+
+.employees-position {
+  margin-bottom: 16px;
+}
+
+/*team*/
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.comanda {
+  display: flex;
+  justify-content: center;
+}
+
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.no-margin:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-team {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .title-list {
@@ -264,11 +301,53 @@ h2 {
   letter-spacing: 0.03em;
 }
 
+.employees {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 /*clients*/
+
+.clients {
+  padding-bottom: 94px;
+}
+
+.piple {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.svg:not(:last-child) {
+  margin-right: 30px;
+}
+
+.imeges {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+}
 
 /*footer*/
 .footer {
+  display: flex;
+  padding: 0;
   background-color: #2f303a;
+}
+
+.footer-info,
+.footer-adres {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-left: 214px;
 }
 
 .logo-footer {
@@ -277,6 +356,7 @@ h2 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-dark-theme-color);
+  text-decoration: none;
 }
 
 .footer-info,
@@ -293,13 +373,40 @@ h2 {
   color: var(--text-dark-theme-color);
 }
 
-.pic-footer {
+.footer-info {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.footer-adres {
+  padding-top: 9px;
+}
+
+.socsiec,
+.net {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-footer,
+.pic-footer-class {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
+}
+
+.pic-footer,
+.socsiec {
+  display: flex;
+  margin-left: 147px;
+  margin-bottom: 20px;
+}
+
+.pic-footer-class {
+  margin-left: 155px;
 }
 
 /*portfolio*/
@@ -317,6 +424,47 @@ h2 {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.main-button {
+  margin-right: 30px;
+}
+
+.secondary-button:not(:last-child) {
+  margin-right: 52px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.net {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+
+.decor {
+  width: 322px;
+}
+
+.editing {
+  margin-right: 30px;
+}
+
+.editing:nth-child(3n) {
+  margin-right: 0;
+}
+
+.editing:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .subtitle {
