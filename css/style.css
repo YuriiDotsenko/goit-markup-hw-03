@@ -275,6 +275,10 @@ p {
   margin-right: 30px;
 }
 
+.photo {
+  display: block;
+}
+
 .section-team {
   text-align: center;
   padding-top: 94px;
@@ -497,6 +501,8 @@ p {
 .subtitle {
   margin-top: 20px;
   margin-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .description {
@@ -510,4 +516,6 @@ p {
 
 .description {
   margin-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
