@@ -31,6 +31,19 @@ ul {
 
 /*logo*/
 
+.heder {
+  border-bottom: 1px solid #ececec;
+}
+
+.conteiner {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .logo-decoration {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -56,10 +69,10 @@ ul {
 
 .navigation {
   display: flex;
-  margin-right: 305px;
 }
 
-.link {
+.link,
+.info {
   padding: 0;
   margin: 0;
   padding-top: 32px;
@@ -86,11 +99,6 @@ ul {
 }
 
 .info {
-  padding: 0;
-  margin: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: flex;
   margin-left: auto;
 }
 
@@ -116,23 +124,12 @@ ul {
   color: var(--accent-color);
 }
 
-.conteiner {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom: 1px solid #ececec;
-}
-
 /*hero*/
 
 .hero {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 1600px;
 }
 
 .hero-title {
@@ -181,32 +178,51 @@ p {
 
 /*our advantages*/
 
+.first-section,
+.two-section,
+.team,
+.clients {
+  padding-bottom: 94px;
+}
+
 .primery {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-top: 94px;
   justify-content: center;
+}
+
+.size {
+  width: 270px;
+}
+
+.size:not(:last-child) {
+  margin-right: 30px;
 }
 
 .primary-margin:not(:last-child) {
   margin-right: 30px;
 }
 
-.first-section {
-  padding-top: 119px;
-  padding-left: 15px;
-  padding-right: 15px;
+.main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
 }
 
-.text {
-  width: 270px;
-  margin: 0;
+.main-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .title {
   display: flex;
-  padding-top: 55px;
-  padding-bottom: 10px;
+  margin-top: 55px;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -220,30 +236,15 @@ p {
 
 /*what we do*/
 
-.team,
-.first-section,
-.clients,
-.two-section {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-}
-
-.section-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-light-theme-color);
-}
-
 .employment {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 94px;
   justify-content: center;
+}
+
+.size-two:not(:last-child) {
+  margin-right: 30px;
 }
 
 .employees-position {
@@ -254,15 +255,9 @@ p {
 
 .team {
   background-color: #f5f4fa;
-  padding-bottom: 94px;
 }
 
-.comanda {
-  display: flex;
-  justify-content: center;
-}
-
-.no-margin {
+.team-list {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -271,18 +266,12 @@ p {
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.no-margin:not(:last-child) {
+.team-list:not(:last-child) {
   margin-right: 30px;
 }
 
 .photo {
   display: block;
-}
-
-.section-team {
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 
 .title-list {
@@ -320,10 +309,6 @@ p {
 
 /*clients*/
 
-.clients {
-  padding-bottom: 94px;
-}
-
 .piple {
   display: flex;
   justify-content: center;
@@ -331,7 +316,7 @@ p {
   padding: 0;
 }
 
-.svg:not(:last-child) {
+.svg-clients:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -405,8 +390,8 @@ p {
   padding: 0;
 }
 
-.pic-footer,
-.pic-footer-class {
+.action,
+.action-class {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -415,14 +400,14 @@ p {
   color: var(--title-dark-theme-color);
 }
 
-.pic-footer,
+.action,
 .socsiec {
   display: flex;
   margin-left: 69px;
   margin-bottom: 20px;
 }
 
-.pic-footer-class {
+.action-class {
   margin-left: 93px;
 }
 
@@ -461,13 +446,8 @@ p {
 
 .net {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
   flex-wrap: wrap;
-  margin-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-bottom: 94px;
 }
 
 .logo-decoration {
