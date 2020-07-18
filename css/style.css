@@ -385,7 +385,7 @@ p {
 }
 
 .socsiec,
-.net {
+.main-unit {
   margin: 0;
   padding: 0;
 }
@@ -444,7 +444,7 @@ p {
   padding: 0;
 }
 
-.net {
+.main-unit {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 94px;
