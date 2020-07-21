@@ -35,8 +35,13 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.conteiner {
+.heder > .conteiner {
   display: flex;
+}
+
+.conteiner,
+.footer-container {
+  /*display: flex;*/
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -178,10 +183,7 @@ p {
 
 /*our advantages*/
 
-.first-section,
-.two-section,
-.team,
-.clients {
+.item {
   padding-bottom: 94px;
 }
 
@@ -270,9 +272,9 @@ p {
   margin-right: 30px;
 }
 
-.photo {
+/*.photo {
   display: block;
-}
+}*/
 
 .title-list {
   font-weight: 700;
@@ -331,13 +333,14 @@ p {
 }
 
 /*footer*/
-.footer {
+.footer > .conteiner {
   display: flex;
-  padding: 0;
-  background-color: #2f303a;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.footer-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 69px;
 }
 
 .footer-info,
@@ -347,9 +350,8 @@ p {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-left: 214px;
   align-items: baseline;
+  background-color: #2f303a;
 }
 
 .logo-footer {
@@ -376,8 +378,7 @@ p {
 }
 
 .footer-info {
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;
 }
 
 .footer-adres {
@@ -388,6 +389,16 @@ p {
 .main-unit {
   margin: 0;
   padding: 0;
+  margin-top: 20px;
+}
+
+.footer-action,
+.forma {
+  padding-top: 72px;
+}
+
+.footer-action {
+  margin-right: 155px;
 }
 
 .action,
@@ -398,17 +409,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
-}
-
-.action,
-.socsiec {
-  display: flex;
-  margin-left: 69px;
-  margin-bottom: 20px;
-}
-
-.action-class {
-  margin-left: 93px;
 }
 
 /*portfolio*/
