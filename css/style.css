@@ -184,6 +184,7 @@ p {
 /*our advantages*/
 
 .item {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -217,7 +218,6 @@ p {
 }
 
 .main-title {
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -260,6 +260,10 @@ p {
 }
 
 .team-list {
+  display: inline-flex;
+}
+
+.team-list {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -271,10 +275,6 @@ p {
 .team-list:not(:last-child) {
   margin-right: 30px;
 }
-
-/*.photo {
-  display: block;
-}*/
 
 .title-list {
   font-weight: 700;
@@ -460,6 +460,10 @@ p {
 
 .editing {
   margin-right: 30px;
+}
+
+.photo-port {
+  width: 370px;
 }
 
 .editing:nth-child(3n) {
