@@ -41,7 +41,6 @@ ul {
 
 .conteiner,
 .footer-container {
-  /*display: flex;*/
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -260,10 +259,7 @@ p {
 }
 
 .team-list {
-  display: inline-flex;
-}
-
-.team-list {
+  display: flex;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -333,13 +329,13 @@ p {
 }
 
 /*footer*/
+
 .footer > .conteiner {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-nav {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-right: 69px;
 }
 
@@ -350,7 +346,8 @@ p {
 }
 
 .footer {
-  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -390,11 +387,6 @@ p {
   margin: 0;
   padding: 0;
   margin-top: 20px;
-}
-
-.footer-action,
-.forma {
-  padding-top: 72px;
 }
 
 .footer-action {
